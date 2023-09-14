@@ -9,9 +9,12 @@ body{
 nav{
     position: fixed;
     /* TODO @tamrkat */
-    animation: fadeInAnimation ease-in 2s;  /* animation for fade in */
+    width: 100vw;
+    text-align: center;
+    background-color: #512e1f1c;
+    animation: fadeInAnimation ease-in 3s;  /* animation for fade in */
 }
-
+/* Main Section style */
 main{
     width: 100vw;
     height: 100vh;
@@ -25,13 +28,19 @@ main{
 }
 .main-text{
     color: #FFF;
-    width: 30vw;
+    width: 50vw;
     padding:25vh 0 0 4vw;
-    line-height:20px;
+    line-break:loose;
     text-transform: uppercase;
-    font-size: 30px;
-    animation: fadeInAnimation ease-out 4s;
+    font-size: 20px;
+    animation: fadeInAnimation ease-out 2s;
 }
+
+
+
+
+
+/* Btn Style  */
 .btn{
     width: 184px;
     height: 60px;
@@ -44,7 +53,7 @@ main{
     border: none;
     transition: ease-in-out;
     transition-duration: 200ms;
-    animation: fadeInAnimation ease-out 4s;
+    animation: fadeInAnimation ease-out 2s;
 }
 .btn:hover{
     background: rgba(51, 29, 19, 0.281);
@@ -54,6 +63,7 @@ main{
     transition-duration: 200ms;
 }
 
+/* Fade In Animation  */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
