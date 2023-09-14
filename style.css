@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     /* TODO @tamrkat */
     width: 100vw;
     text-align: center;
@@ -36,16 +36,26 @@ main{
     animation: fadeInAnimation ease-out 2s;
 }
 
+/* Pick Your Coffee  */
 
+.silder-btn{
+    display: flex;
+    justify-content: space-between;
+}
 
-
-
-/* Btn Style  */
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin-right: 10px;
+}
+/* Btns Style  */
 .btn{
     width: 184px;
     height: 60px;
     border-radius: 17px;
-    background: #512E1F;
+    background-color: #512E1F;
     color:white;
     font-family: 'Inter', sans-serif;
     font-size: 26px;
@@ -55,8 +65,36 @@ main{
     transition-duration: 200ms;
     animation: fadeInAnimation ease-out 2s;
 }
-.btn:hover{
-    background: rgba(51, 29, 19, 0.281);
+.right-arrow, .left-arrow{
+    display: block;
+    width:50px;
+    height:50px;
+    background-color: #63493e;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    z-index: 3;
+}
+.right-arrow::after{
+    content: '';
+    position: fixed;
+    background-image: url('./deyof-assets/rightArrow.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+}
+.left-arrow::after{
+    content: '';
+    position: fixed;
+    background-image: url('./deyof-assets/left-arrow.png');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin: 10px 0 0 10px;
+}
+.btn:hover, .left-arrow:hover, .right-arrow:hover{
+    background: #512e1fb7;
     color:white;
     border-radius: 30px;
     transition: ease-in-out;
