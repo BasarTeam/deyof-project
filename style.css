@@ -17,7 +17,7 @@ main{
     height: 100vh;
     background-image: url('./deyof-assets/main-section-background-smailer.png');
     background-size:cover;
-    image-rendering: optimizeQuality;
+    image-rendering: optimizeSpeed;
     background-repeat: no-repeat;
     transition-duration: 200ms;
     background-position: center;
