@@ -1,5 +1,5 @@
 # dayof project
-
+# **must read before contributes**
 ## steps for get thongs done =>
 
 > ### 1- Create new branch for the task :
