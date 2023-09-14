@@ -15,8 +15,9 @@ nav{
 main{
     width: 100vw;
     height: 100vh;
-    background-image: url('./deyof-assets/main-section-background.png');
+    background-image: url('./deyof-assets/main-section-background-smailer.png');
     background-size:cover;
+    image-rendering: optimizeQuality;
     background-repeat: no-repeat;
     transition-duration: 200ms;
     background-position: center;
