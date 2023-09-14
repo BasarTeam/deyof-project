@@ -1,8 +1,8 @@
 # dayof project
 # **must read before contributes**
-## steps for get thongs done =>
+## steps for getting things done =>
 
-> ### 1- Create new branch for the task :
+> ### 1- Create a new branch for the task :
 ```
     git branch task#n
     git checkout task#n
@@ -19,22 +19,22 @@
 
 ```
 
-> ### 3- check if changes work probably :
+> ### 3- check if the changes work probably :
 
 #### go to :
-> deyof repo > settings > pages > build and deployment > beanch 
+> deyof repo > settings > pages > build and deployment > branch 
 
 #### and change the branch to Production & wait until finish deployment in actions.
 
-> => if every thing work probably create a pull request manually in pull requests page
+> => If everything works probably create a pull request manually in the pull requests page
 
-### final step : delete the task branch you'ev created :
+### Final step : delete the task branch you created :
 
-####  for delete at localy :
+####  for delete at locally :
 ```
     git branch -d task#n
 ```
-####  for delete at remotly :
+####  for delete at remotely :
 ```
     git push origin --delete task#n
 ```
