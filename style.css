@@ -7,13 +7,15 @@ body{
 }
 
 nav{
-    position: fixed;
+    position: absolute;
     /* TODO @tamrkat */
     width: 100vw;
     text-align: center;
     background-color: #512e1f1c;
     animation: fadeInAnimation ease-in 3s;  /* animation for fade in */
 }
+
+
 /* Main Section style */
 main{
     width: 100vw;
@@ -104,7 +106,7 @@ p.price{
     width: 184px;
     height: 60px;
     border-radius: 17px;
-    background: #512E1F;
+    background-color: #3E230E;
     color:white;
     font-family: 'Inter', sans-serif;
     font-size: 26px;
@@ -114,8 +116,36 @@ p.price{
     transition-duration: 200ms;
     animation: fadeInAnimation ease-out 2s;
 }
-.btn:hover{
-    background: rgba(51, 29, 19, 0.281);
+.right-arrow, .left-arrow{
+    display: block;
+    width:50px;
+    height:50px;
+    background-color: #63493e;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    z-index: 3;
+}
+.right-arrow::after{
+    content: '';
+    position: absolute;
+    background-image: url('./deyof-assets/rightArrow.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0 0 15px;
+}
+.left-arrow::after{
+    content: '';
+    position: absolute;
+    background-image: url('./deyof-assets/left-arrow.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    margin: 15px 0 0 15px;
+}
+.btn:hover, .left-arrow:hover, .right-arrow:hover{
+    background: #512e1fb7;
     color:white;
     transition: ease-in-out;
     transition-duration: 200ms;
