@@ -29,18 +29,77 @@ main{
 .main-text{
     color: #FFF;
     width: 50vw;
-    padding:25vh 0 0 4vw;
+    padding:25vh 0 0 10vw;
     line-break:loose;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 35px;
     animation: fadeInAnimation ease-out 2s;
 }
 
 
 
+/* Pick Your Coffee  */
+.silder-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.silder-btn>h1{
+    color: black;
+    font-weight: 800;
+    font-size: 50px;
+    margin: 0;
+}
+.cards{
+    position: sticky;
+    top: 0;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-left: 24px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 40px;
+    background-color: transparent;
+}
+.card{
+    text-align: center;
+}
+div.card>div:not(.price){
+    background-color: #3e230e;
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    padding-top: 40px;
+    border-radius: 20px;
+    box-shadow:  14px 19px 62px 15px #0000001a;
+}
+.card>div>img{
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit:contain;
+}
+h2.coffee{
+    font-weight:bold;
+    font-size: 30px;
+}
+div.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button.buy{
+    width: fit-content;
+    height: fit-content;
+    font-size: 13px;
+    padding: 10px;
+}
+p.price{
+    color: black;
+    font-weight: 700;
+}
 
-
-/* Btn Style  */
+/* Btns Style  */
 .btn{
     width: 184px;
     height: 60px;
@@ -58,7 +117,6 @@ main{
 .btn:hover{
     background: rgba(51, 29, 19, 0.281);
     color:white;
-    border-radius: 30px;
     transition: ease-in-out;
     transition-duration: 200ms;
 }
