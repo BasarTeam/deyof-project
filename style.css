@@ -6,9 +6,11 @@ body{
     color:white;
 }
 
+/* Nav bar */
+
 nav{
     position: absolute;
-    /* TODO @tamrkat */
+    /* ==> TODO @tamrkat */
     width: 100vw;
     text-align: center;
     background-color: #512e1f1c;
@@ -38,6 +40,8 @@ main{
     animation: fadeInAnimation ease-out 2s;
 }
 
+/* About Section */
+/* ==> TODO @ tamkat */
 
 
 /* Pick Your Coffee  */
@@ -100,6 +104,9 @@ p.price{
     color: black;
     font-weight: 700;
 }
+
+/* Footer */
+
 
 /* Btns Style  */
 .btn{
