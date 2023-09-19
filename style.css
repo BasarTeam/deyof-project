@@ -3,6 +3,8 @@ html{
 }
 body{
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -10,16 +12,33 @@ body{
 }
 
 /* Nav bar */
-
 nav{
     position: absolute;
-    /* ==> TODO @tamrkat */
-    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    gap: 10vw;
     text-align: center;
-    background-color: #512e1f1c;
+    margin-top: -15px;
+    background-color: transparent;
     animation: fadeInAnimation ease-in 3s;  /* animation for fade in */
 }
-
+nav>div>a{
+    color: white !important;
+}
+nav>.sections-link{
+    gap: 60px !important;
+    margin: 0 !important;
+}
+nav>button{
+    background-color: white !important;
+    color: #bc7c46 !important;
+    padding: 0 17px 0 40\\17px !important;
+    font-size: 20px !important;
+    font-weight: normal !important;
+}
 
 /* Main Section style */
 main{
@@ -175,8 +194,8 @@ hr{
 
 /* Btns Style  */
 .btn{
-    width: 184px;
-    height: 60px;
+    width: 166px;
+    height: 50px;
     border-radius: 17px;
     background-color: #3E230E;
     color:white;
