@@ -42,6 +42,9 @@ nav>button{
     font-size: 20px !important;
     font-weight: normal !important;
 }
+nav>button:hover{
+    opacity: 0.6;
+}
 
 /* Main Section style */
 main{
