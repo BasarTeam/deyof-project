@@ -1,8 +1,10 @@
 html{
     scroll-behavior:smooth;
+    scroll-snap-type: y mandatory;
 }
 body{
     overflow-x: hidden;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -51,6 +53,7 @@ main{
     background-repeat: no-repeat;
     transition-duration: 200ms;
     background-position: center;
+    scroll-snap-align:center;
     animation: fadeInAnimation ease-in 1s;
 }
 .main-text{
@@ -71,14 +74,15 @@ main{
     color: black;
     width: 100vw;
     height: 100vh;
+    scroll-snap-align:start;
+    scroll-behavior:smooth;
 }
 #about>h1{
     color: #3E230E;
     text-transform: uppercase;
     font-weight: 800;
     font-size: 50px;
-    margin: 0 0 17px 5% ;
-
+    margin: 13px 0 17px 5% ;
 }
 #about-section{
     display: flex;
@@ -94,13 +98,15 @@ img.about{
 article>h1{
     font-weight: 900;
     font-size: 77px;
+    text-transform: uppercase;
     width: 675px;
     margin: 0;
 }
 article>h3{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: normal;
+    width: 40vw;
     letter-spacing: 2px;
 }
 
