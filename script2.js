@@ -1,15 +1,20 @@
 let rbtn = document.querySelector('.r-arr');
 const lbtn = document.querySelector('.l-arr');
-const backegs = document.querySelector('.pacs');
-const backeg = document.querySelector('.pac');
+// geting cards 
+const Cards = document.querySelector('.pacs').clientWidth;
 
-rbtn.addEventListener('click' , ()=>{
-    console.log('click');
-    const scrollAmount = backeg.clientWidth 
-    backegs.scrollBy({left:scrollAmount, behavior:"smooth"});
-})
-lbtn.addEventListener('click' , ()=>{
-    console.log('click');
-    const scrollAmount = backeg.clientWidth * -1
-    backegs.scrollBy({left:scrollAmount, behavior:"smooth"});
-})
+if(Cards) {
+    let cardsWidth = Cards.clientWidth ;
+
+    rbtn.addEventListener('click' , ()=>{
+        console.log('click');
+        const scrollAmount = cardsWidth
+        packegs.scrollBy({left:scrollAmount, behavior:"smooth"});
+    })
+    lbtn.addEventListener('click' , ()=>{
+        console.log('click');
+        const scrollAmount = cardsWidth * -1
+        packegs.scrollBy({left:scrollAmount, behavior:"smooth"});
+    })
+    
+}
