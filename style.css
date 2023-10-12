@@ -16,7 +16,7 @@ body{
 
 /* Nav bar */
 nav{
-    position: absolute;
+position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
